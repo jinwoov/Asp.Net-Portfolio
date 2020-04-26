@@ -1,4 +1,6 @@
-﻿#index-background {
+﻿@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+#index-background {
     width: 100%;
 
 }
@@ -6,8 +8,37 @@
 #box {
     max-height: 100vh !important;
     overflow: hidden;
+    position: relative;
 }
 
 #navvy{
     background-color: transparent !important;
+}
+
+#text-box {
+    font-family: 'Yeon Sung', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.4s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#skills {
+    margin-top: 65px;
 }

@@ -9,7 +9,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="~/styles/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato|Yeon+Sung&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/styles/base.css?t=@DateTime.Now.Ticks" type="text/css" />
     <link rel="stylesheet" href="~/styles/layout.css?t=@DateTime.Now.Ticks" type="text/css" />
     <link rel="stylesheet" href="~/styles/module.css?t=@DateTime.Now.Ticks" type="text/css" />
@@ -39,12 +39,42 @@
                 </ul>
             </div>
         </nav>
-        <div id="box">
+        <div class="text-white text-center" id="box">
             <img src="~/images/curtain.jpeg" alt="background" id="index-background">
+            <div id="text-box">
+                <h1>Jin Woo Kim</h1>
+                <p>Full-Stack Developer</p>
+                <p>Seattle, WA</p>
+            </div>
         </div>
     </header>
     <main>
-        
+        <div class="container" id="skills">
+            <div class="row">
+                <img src="~/images/agile.png" alt="agile" class="col-2 mx-auto" />
+                <img src="~/images/qa.png" alt="Test driven" class="col-2 mx-auto" />
+                <img src="~/images/algorithm.png" alt="Data structure" class="col-2 mx-auto" />
+                <img src="~/images/relation.png" alt="Database relation" class="col-2 mx-auto" />
+            </div>
+            <div class="row text-center my-3">
+                <div class="col-2 mx-auto">
+                    <h3>Agile</h3>
+                    <p>Creating the webpage to meet the standard.</p>
+                </div>
+                <div class="col-2 mx-auto">
+                    <h3>Test Driven</h3>
+                    <p>Create an application with test development.</p>
+                </div>
+                <div class="col-2 mx-auto">
+                    <h3>Data Structure</h3>
+                    <p>Strong knowledge on data structure and algorithm.  Strong analytical mind set and critical thinking.</p>
+                </div>
+                <div class="col-2 mx-auto">
+                    <h2>SQL and Database</h2>
+                    <p>Well understanding of SQL database and relation between each database.</p>
+                </div>
+            </div>
+        </div>
 
     </main>
 
