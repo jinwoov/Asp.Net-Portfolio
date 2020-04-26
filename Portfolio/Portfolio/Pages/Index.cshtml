@@ -9,7 +9,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="~/styles/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lato|Yeon+Sung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/styles/base.css?t=@DateTime.Now.Ticks" type="text/css" />
     <link rel="stylesheet" href="~/styles/layout.css?t=@DateTime.Now.Ticks" type="text/css" />
     <link rel="stylesheet" href="~/styles/module.css?t=@DateTime.Now.Ticks" type="text/css" />
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Homepage</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="nav-link">Blog</a>
@@ -50,32 +50,41 @@
     </header>
     <main>
         <div class="container" id="skills">
-            <div class="row">
-                <img src="~/images/agile.png" alt="agile" class="col-2 mx-auto" />
-                <img src="~/images/qa.png" alt="Test driven" class="col-2 mx-auto" />
-                <img src="~/images/algorithm.png" alt="Data structure" class="col-2 mx-auto" />
-                <img src="~/images/relation.png" alt="Database relation" class="col-2 mx-auto" />
+            <div class="row my-5">
+                <img src="~/images/agile.png" alt="agile" class="col-md-2 mx-auto" />
+                <img src="~/images/qa.png" alt="Test driven" class="col-md-2 mx-auto" />
+                <img src="~/images/algorithm.png" alt="Data structure" class="col-md-2 mx-auto" />
+                <img src="~/images/relation.png" alt="Database relation" class="col-md-2 mx-auto" />
             </div>
             <div class="row text-center my-3">
-                <div class="col-2 mx-auto">
+                <div class="col-2 mx-auto mw-80">
                     <h3>Agile</h3>
                     <p>Creating the webpage to meet the standard.</p>
                 </div>
-                <div class="col-2 mx-auto">
+                <div class="col-2 mx-auto mw-80">
                     <h3>Test Driven</h3>
                     <p>Create an application with test development.</p>
                 </div>
-                <div class="col-2 mx-auto">
+                <div class="col-2 mx-auto mw-80">
                     <h3>Data Structure</h3>
                     <p>Strong knowledge on data structure and algorithm.  Strong analytical mind set and critical thinking.</p>
                 </div>
-                <div class="col-2 mx-auto">
+                <div class="col-2 mx-auto mw-80">
                     <h2>SQL and Database</h2>
                     <p>Well understanding of SQL database and relation between each database.</p>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-5 text-center ml-auto p-5">
+                <img src="~/images/profile.jfif" alt="Profile picture" class="rounded img-fluid mx-auto" id="profile-pic"/>
+            </div>
+            <div class="col-md-4 mr-auto p-5">
+                    My name is Jin Kim and I am a software developer. Growing up, I would sit in front of the computer for hours and hours, wondering who is behind the screen making the game, I would often talk to the screen wondering if anyone will answer back. But I started to notice myself drawn to it more when my family was going through hardship. During that time I think I coped with it little better because of technology and gaming.  Game served as an escape of reality for me and I was drawn to it more and more.
 
+                    I moved to Seattle to apply to dental school but I noticed myself being disconnected from that more and more as the time pass and I finally made a move to change my career into something that I am truly passionate about. Needless to say that my question has been answered about the man behind the screen and I want to build an application that not only is comprehensive and scalable, but helps to inspire kids like me in future
+            </div>
+        </div>
     </main>
 
 
