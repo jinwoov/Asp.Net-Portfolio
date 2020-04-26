@@ -1,0 +1,13 @@
+﻿#index-background {
+    width: 100%;
+
+}
+
+#box {
+    max-height: 100vh !important;
+    overflow: hidden;
+}
+
+#navvy{
+    background-color: transparent !important;
+}
