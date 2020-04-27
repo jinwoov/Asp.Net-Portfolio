@@ -28,18 +28,18 @@
                         <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Blog</a>
+                        <a href="#about-us" class="nav-link">About Me</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">About Me</a>
+                        <a href="#projects" class="nav-link">Projects</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="text-white text-center" id="box">
+        <div class="text-white text-center col-sm-12" id="box">
             <img src="~/images/curtain.jpeg" alt="background" id="index-background">
             <div id="text-box">
                 <h1>Jin Woo Kim</h1>
@@ -51,39 +51,108 @@
     <main>
         <div class="container" id="skills">
             <div class="row my-5">
-                <img src="~/images/agile.png" alt="agile" class="col-md-2 mx-auto" />
-                <img src="~/images/qa.png" alt="Test driven" class="col-md-2 mx-auto" />
-                <img src="~/images/algorithm.png" alt="Data structure" class="col-md-2 mx-auto" />
-                <img src="~/images/relation.png" alt="Database relation" class="col-md-2 mx-auto" />
+                <img src="~/images/agile.png" alt="agile" class="col-md-2 mx-auto w-25 h-25" />
+                <img src="~/images/qa.png" alt="Test driven" class="col-md-2 mx-auto w-25 h-25" />
+                <img src="~/images/algorithm.png" alt="Data structure" class="col-md-2 mx-auto w-25 h-25" />
+                <img src="~/images/relation.png" alt="Database relation" class="col-md-2 mx-auto w-25 h-25" />
             </div>
             <div class="row text-center my-3">
                 <div class="col-2 mx-auto">
-                    <h3>Agile</h3>
+                    <h4>Agile</h4>
                     <p>Creating the webpage to meet the standard.</p>
                 </div>
                 <div class="col-2 mx-auto">
-                    <h3>Test Driven</h3>
+                    <h4>Test Driven</h4>
                     <p>Create an application with test development.</p>
                 </div>
                 <div class="col-2 mx-auto">
-                    <h3>Data Structure</h3>
+                    <h4>Data Structure</h4>
                     <p>Strong knowledge on data structure and algorithm.  Strong analytical mind set and critical thinking.</p>
                 </div>
                 <div class="col-2 mx-auto">
-                    <h2>SQL and Database</h2>
+                    <h4>SQL and Database</h4>
                     <p>Well understanding of SQL database and relation between each database.</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-5 text-center ml-auto p-5">
-                <img src="~/images/profile.jfif" alt="Profile picture" class="rounded img-fluid mx-auto" id="profile-pic"/>
+        <div class="row col-md-12 mx-auto" id="about-us">
+            <div class="col-md-6 text-right p-sm-5 mb-5 pl-sm-4">
+                <img src="~/images/profile.jfif" alt="Profile picture" class="rounded img-fluid mx-auto w-sm-75" id="profile-pic"/>
             </div>
-            <div class="col-md-4 mr-auto p-5">
+            <div class="col-md-5 p-sm-5">
+                <p>
                     My name is Jin Kim and I am a software developer. Growing up, I would sit in front of the computer for hours and hours, wondering who is behind the screen making the game, I would often talk to the screen wondering if anyone will answer back. But I started to notice myself drawn to it more when my family was going through hardship. During that time I think I coped with it little better because of technology and gaming.  Game served as an escape of reality for me and I was drawn to it more and more.
 
                     I moved to Seattle to apply to dental school but I noticed myself being disconnected from that more and more as the time pass and I finally made a move to change my career into something that I am truly passionate about. Needless to say that my question has been answered about the man behind the screen and I want to build an application that not only is comprehensive and scalable, but helps to inspire kids like me in future
+                </p>
             </div>
+        </div>
+        <div class="container" id="projects">
+            <div class="row text-center">
+                <div class="col-md-4 my-3">
+                    <div class="card pb-4">
+                        <a href="https://bopeepmvc.azurewebsites.net/" target="_blank">
+                            <img class="card-img-top" alt="Bored To Death" src="~/images/btd.jpg">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Bored To Death</h5>
+                            <p class="card-text">A web application that is designed using ASP.NET framework calls custom API server that utilize CRUD operation. The purpose of this website is to alleviate user who is experiencing boredom during the quarantine times.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card pb-4">
+                        <a href="https://jumpstartcf.herokuapp.com/" target="_blank">
+                            <img class="card-img-top" alt="JumpStart" src="~/images/jumpstart.png">
+                        </a>                        
+                        <div class="card-body">
+                            <h5 class="card-title">JumpStart</h5>
+                            <p class="card-text">A web application that incorporates node.js using MVC framework. Each search calls three API to different website and aggregates the result into random orders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card pb-4">
+                        <a href="https://bopeepmvc.azurewebsites.net/" target="_blank">
+                            <img class="card-img-top" alt="E-Commerce" src="~/images/quikfix.jpg">
+                        </a>                        
+                        <div class="card-body">
+                            <h5 class="card-title">Quik Fix</h5>
+                            <p class="card-text">E-commerce website that is created using ASP.NET framework. User are able to register and login securely to the website and purchase service of their choice securely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="contact">
+            <form method="post" class="col-sm-8 mx-auto border border-muted rounded p-3 my-5">
+                <div class="form-group row">
+                    <label asp-for="EmailInfo.Email" class="col-sm-12 col-form-label"></label>
+                    <div class="col-sm-12">
+                        <input asp-for="EmailInfo.Email" class="form-control" />
+                        <span class="invalid-feedback" asp-validation-for="EmailInfo.Email"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="EmailInfo.Name" class="col-sm-12 col-form-label"></label>
+                    <div class="col-sm-12">
+                        <input asp-for="EmailInfo.Name" class="form-control" />
+                        <span class="invalid-feedback" asp-validation-for="EmailInfo.Name"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label asp-for="EmailInfo.Message" class="col-sm-12 col-form-label"></label>
+                    <div class="col-sm-12">
+                        <textarea class="form-control" asp-for="EmailInfo.Message" rows="3"></textarea>
+                        <span class="invalid-feedback" asp-validation-for="EmailInfo.Message"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <buton type="submit" class="btn btn-primary mx-auto">Submit</buton>
+                </div>
+            </form>
         </div>
     </main>
 

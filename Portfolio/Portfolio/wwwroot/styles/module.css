@@ -1,14 +1,10 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 
-#index-background {
-    width: 100%;
-
-}
-
 #box {
     max-height: 100vh !important;
     overflow: hidden;
     position: relative;
+    padding: 0;
 }
 
 #navvy{
@@ -43,6 +39,10 @@
     margin-top: 65px;
 }
 
-#profile-pic{
-    width: 60%;
+#index-background {
+    width: 100%;
+}
+
+.card-body {
+    height: 200px;
 }
