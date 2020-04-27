@@ -46,3 +46,14 @@
 .card-body {
     height: 200px;
 }
+
+@media(min-width: 760px) {
+
+    #profile-pic{
+        width:85%;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+}
