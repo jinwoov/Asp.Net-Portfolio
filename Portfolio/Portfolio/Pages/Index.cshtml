@@ -77,7 +77,7 @@
         </div>
         <div class="row col-md-12 mx-auto" id="about-us">
             <div class="col-md-6 text-center p-sm-5 mb-5">
-                <img src="~/images/profile.jfif" alt="Profile picture" class="rounded pl-sm-5 w-sm-50" id="profile-pic"/>
+                <img src="~/images/profile.jfif" alt="Profile picture" class="rounded pl-sm-5 w-sm-50" id="profile-pic" />
             </div>
             <div class="col-md-5 p-sm-5">
                 <p>
@@ -96,7 +96,8 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Bored To Death</h5>
-                            <p class="card-text">A web application that is designed using ASP.NET framework calls custom API server that utilize CRUD operation. The purpose of this website is to alleviate user who is experiencing boredom during the quarantine times.
+                            <p class="card-text">
+                                A web application that is designed using ASP.NET framework calls custom API server that utilize CRUD operation. The purpose of this website is to alleviate user who is experiencing boredom during the quarantine times.
                             </p>
                         </div>
                     </div>
@@ -105,7 +106,7 @@
                     <div class="card pb-md-5">
                         <a href="https://jumpstartcf.herokuapp.com/" target="_blank">
                             <img class="card-img-top" alt="JumpStart" src="~/images/jumpstart.png">
-                        </a>                        
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">JumpStart</h5>
                             <p class="card-text">A web application that incorporates node.js using MVC framework. Each search calls three API to different website and aggregates the result into random orders.</p>
@@ -116,7 +117,7 @@
                     <div class="card pb-md-5">
                         <a href="https://e-commercemvc.azurewebsites.net/" target="_blank">
                             <img class="card-img-top" alt="E-Commerce" src="~/images/quikfix.jpg">
-                        </a>                        
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">Quik Fix</h5>
                             <p class="card-text">E-commerce website that is created using ASP.NET framework. User are able to register and login securely to the website and purchase service of their choice securely.</p>
@@ -126,34 +127,53 @@
             </div>
         </div>
 
-        <div class="container" id="contact">
+        <div class="container position-relative" id="contact">
             <form method="post" class="col-sm-8 mx-auto border border-muted rounded p-3 my-5">
                 <div class="form-group row">
                     <label asp-for="EmailInfo.Email" class="col-sm-12 col-form-label"></label>
                     <div class="col-sm-12">
-                        <input asp-for="EmailInfo.Email" class="form-control" />
+                        <input asp-for="EmailInfo.Email" class="form-control" required />
                         <span class="invalid-feedback" asp-validation-for="EmailInfo.Email"></span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label asp-for="EmailInfo.Name" class="col-sm-12 col-form-label"></label>
                     <div class="col-sm-12">
-                        <input asp-for="EmailInfo.Name" class="form-control" />
+                        <input asp-for="EmailInfo.Name" class="form-control" required id="name-box"/>
                         <span class="invalid-feedback" asp-validation-for="EmailInfo.Name"></span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label asp-for="EmailInfo.Message" class="col-sm-12 col-form-label"></label>
                     <div class="col-sm-12">
-                        <textarea class="form-control" asp-for="EmailInfo.Message" rows="3"></textarea>
+                        <textarea class="form-control" asp-for="EmailInfo.Message" rows="5" required></textarea>
                         <span class="invalid-feedback" asp-validation-for="EmailInfo.Message"></span>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+                    <button type="submit" class="btn btn-primary mx-auto" id="submit-button">Submit</button>
                 </div>
             </form>
+            <div class="modal position-absolute align-content-center" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="User-name-box"></h5>
+                            <button type="button" class="closing close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Thank you!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success closing">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </main>
 
 
@@ -161,4 +181,5 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="~/js/app.js" ></script>
 </body>

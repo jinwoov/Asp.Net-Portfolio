@@ -47,8 +47,11 @@
     height: 200px;
 }
 
-@media(min-width: 760px) {
+.modal {
+    bottom: 50%;
+}
 
+@media(min-width: 760px) {
     #profile-pic{
         width:85%;
     }

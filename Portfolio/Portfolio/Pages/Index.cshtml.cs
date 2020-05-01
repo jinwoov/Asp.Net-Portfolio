@@ -24,10 +24,9 @@ namespace Portfolio.Pages
         {
         }
 
-        public async Task<IActionResult> OnPost()
+        public async Task OnPost()
         {
             await _email.SendEmailAsync(EmailInfo.Email, $"From my portfolio, this is from {EmailInfo.Name}", EmailInfo.Message);
-            return Page();
         }
     }
 
