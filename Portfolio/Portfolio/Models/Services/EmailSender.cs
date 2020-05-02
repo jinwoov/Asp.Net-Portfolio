@@ -17,15 +17,15 @@ namespace Portfolio.Models.Services
         {
             _configuration = configuration;
         }
-        public async Task SendEmailAsync(string email, string subject, string message)
+        public async Task SendEmailAsync(string email, string name, string message)
         {
             SendGridClient client = new SendGridClient(_configuration["SendGrid-Key"]);
             SendGridMessage msg = new SendGridMessage();
 
             //First param is email and second is email
-            msg.SetFrom(email, "Jin Woo Kim");
+            msg.SetFrom(email, name);
             msg.AddTo("jinwoov@gmail.com");
-            msg.SetSubject(subject);
+            msg.SetSubject("This is from portfolio");
             msg.AddContent(MimeType.Html, message);
 
             await client.SendEmailAsync(msg);

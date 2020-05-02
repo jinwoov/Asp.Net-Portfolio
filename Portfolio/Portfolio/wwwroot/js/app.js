@@ -3,7 +3,6 @@
 
     $("#User-name-box").text(`Hi! ${$("#name-box").val()}`)
 
-    e.preventDefault();
 });
 
 $(".modal").hide();
