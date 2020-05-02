@@ -15,8 +15,10 @@ $(".closing").click(function () {
 $(document).scroll(function () {
     if ($(document).scrollTop() >= 550) {
         $('#navvy').removeAttr("id");
+        $('#profile-pic').parent().attr("id", "profile-picture");
     } else {
         $('#nav-bard').parent().attr("id", "navvy");
+        $('#profile-picture').removeAttr("id");
     }
 })
 
