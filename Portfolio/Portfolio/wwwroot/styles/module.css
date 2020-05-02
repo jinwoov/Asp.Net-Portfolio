@@ -51,6 +51,10 @@
     bottom: 50%;
 }
 
+.interactive-nav {
+    background-color: var(--dark) !important;
+}
+
 @media(min-width: 760px) {
     #profile-pic{
         width:85%;
