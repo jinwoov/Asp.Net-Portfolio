@@ -29,10 +29,51 @@
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;
+
     }
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes backgroundFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.95);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes enlargeHover {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes enlargeHoverOut {
+    0% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1.0);
     }
 }
 
@@ -62,6 +103,57 @@
     animation-timing-function: ease-in;
     animation-duration: 1.4s;
 }
+
+.projectBox {
+    animation-name: enlargeHoverOut;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+    .projectBox:hover {
+        animation-name: enlargeHover;
+        animation-timing-function: ease-in;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+.cardbody {
+    top: 0;
+    width: 95%;
+    left: 2.5%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    animation-name: fadeOutOpacity;
+    animation-timing-function: linear;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+    .cardbody:hover {
+        animation-name: backgroundFadeIn;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        border-radius: 2%;
+    }
+
+.inner-container {
+    width: 90%;
+    margin: auto;
+}
+
+.project-row {
+    width: 90%;
+    margin: auto;
+}
+
+.card-img-top {
+    height: 250px;
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.37);
+}
+
 
 @media(min-width: 760px) {
     #profile-pic{
