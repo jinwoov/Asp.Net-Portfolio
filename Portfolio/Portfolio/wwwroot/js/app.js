@@ -18,15 +18,6 @@ $(document).scroll(function () {
         $('#nav-bard').parent().attr("id", "navvy");
         $('#profile-picture').removeAttr("id");
     }
-})
-
-$(document).scroll(function () {
-    if ($(document).scrollTop() >= 300) {
-        $('#skills').addClass('skill-button2');
-    }
-    else {
-        $('#skills').removeClass('skill-button2');
-    }
 });
 
 $(function () {

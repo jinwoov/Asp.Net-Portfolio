@@ -8,12 +8,6 @@
   body header #nav-bard span {
     width: 50px !important;
     height: 50px !important; }
-  body main .skill-button2 {
-    opacity: 0;
-    animation-name: top-to-bot;
-    animation-timing-function: ease-in;
-    animation-duration: 1.4s;
-    animation-fill-mode: forwards; }
   body footer {
     background-color: #343a40; }
     body footer div a {
@@ -31,9 +25,3 @@
     width: 100%; }
   header .nav-link {
     font-size: 30px !important; } }
-
-@keyframes top-to-bot {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
