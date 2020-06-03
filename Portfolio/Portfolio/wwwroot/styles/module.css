@@ -85,10 +85,6 @@
     width: 100%;
 }
 
-.card-body {
-    height: 200px;
-}
-
 .modal {
     bottom: 50%;
 }
@@ -122,7 +118,7 @@
     top: 0;
     width: 95%;
     left: 2.5%;
-    height: 250px;
+    height: 100%;
     display: flex;
     align-items: center;
     animation-name: fadeOutOpacity;
@@ -150,14 +146,21 @@
 }
 
 .card-img-top {
-    height: 250px;
+    height: 100%;
     box-shadow: 5px 5px 3px rgba(0,0,0,0.37);
 }
 
+#profile-info {
+    line-height: 1.6;
+    font-size: 19px;
+    padding: 45px 10px;
+}
 
-@media(min-width: 760px) {
+
+@media(min-width: 800px) {
     #profile-pic{
-        width:85%;
+        width:80%;
+        border-radius: 5%;
     }
 
     .card-text{

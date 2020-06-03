@@ -1,0 +1,12 @@
+﻿body {
+  height: 100%; }
+  body footer {
+    background-color: #343a40;
+    margin-bottom: -10px; }
+    body footer div a {
+      font-size: 1.25rem;
+      color: white; }
+    body footer div a:hover {
+      color: white;
+      text-decoration: none;
+      opacity: 0.6; }
