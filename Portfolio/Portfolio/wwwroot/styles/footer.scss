@@ -1,19 +1,76 @@
-﻿body {
+﻿$breakpoint-tablet: 1000px;
+
+body {
     height: 100%;
-        footer {
-            background-color: #343a40;
-            div {
 
-                a {
-                    font-size: 1.5rem;
-                    color: white;
-                }
+    button {
+        background: none;
+        border: none;
 
-                a:hover {
-                    color: white;
-                    text-decoration: none;
-                    opacity:0.6;
-                }
+        .skill-header {
+            margin-top: 15px !important;
+        }
+    }
+
+
+    header {
+        #nav-bard {
+            span {
+                width: 50px !important;
+                height: 50px !important;
             }
         }
- }
+    }
+
+    main {
+        .skill-button2 {
+            opacity: 0;
+            animation-name: top-to-bot;
+            animation-timing-function: ease-in;
+            animation-duration: 1.4s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    footer {
+        background-color: #343a40;
+
+        div {
+
+            a {
+                font-size: 1.5rem;
+                color: white;
+            }
+
+            a:hover {
+                color: white;
+                text-decoration: none;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    header {
+        #curtain-box {
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            width: 100%;
+        }
+
+        .nav-link {
+            font-size: 30px !important;
+        }
+    }
+}
+
+@keyframes top-to-bot {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

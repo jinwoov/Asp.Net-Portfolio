@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="curtain-box">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navvy">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" id="nav-bard">
                 <span class="navbar-toggler-icon"></span>
@@ -40,43 +40,45 @@
                 </ul>
             </div>
         </nav>
-        <div class="text-white text-center col-sm-12" id="box">
-            <img src="~/images/curtain.jpeg" alt="background" id="index-background">
             <div id="text-box">
                 <h1>Jin Woo Kim</h1>
                 <p>Full-Stack Developer</p>
                 <p>Seattle, WA</p>
             </div>
-        </div>
     </header>
     <main>
+        <h1 class="text-center font-weight-bold mt-5">SKILLS</h1>
         <div class="container" id="skills">
             <div class="row my-5">
-                <img src="~/images/agile.png" alt="agile" class="col-md-2 mx-auto w-25 h-25" />
-                <img src="~/images/qa.png" alt="Test driven" class="col-md-2 mx-auto w-25 h-25" />
-                <img src="~/images/algorithm.png" alt="Data structure" class="col-md-2 mx-auto w-25 h-25" />
-                <img src="~/images/relation.png" alt="Database relation" class="col-md-2 mx-auto w-25 h-25" />
-            </div>
-            <div class="row text-center my-3">
-                <div class="col-2 mx-auto">
-                    <h4>Agile</h4>
-                    <p>Passionate about developing and delivering high quality code that is easy to read and maintain. Refactors code to improve the quality. Habitually applies agile development principles, displaying a solid understanding of agile processes, reports, and metrics, and how to use them.</p>
+                <div class="col-md-2 mx-auto w-25 h-25">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Passionate about developing and delivering high quality code that is easy to read and maintain. Refactors code to improve the quality. Habitually applies agile development principles, displaying a solid understanding of agile processes, reports, and metrics, and how to use them." class="skill-button">
+                        <img src="~/images/agile.png" alt="agile" class="img-fluid" />
+                        <h4 class="text-center skill-header">Agile</h4>
+                    </button>
                 </div>
-                <div class="col-2 mx-auto">
-                    <h4>Test Driven Development</h4>
-                    <p>Relies on test driven process during the development cycle to deliver bug free application.</p>
+                <div class="col-md-2 mx-auto w-25 h-25">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Relies on test driven process during the development cycle to deliver bug free application." class="skill-button">
+                        <img src="~/images/qa.png" alt="Test driven" class="img-fluid" />
+                        <h4 class="text-center skill-header">Test Driven Development</h4>
+                    </button>
                 </div>
-                <div class="col-2 mx-auto">
-                    <h4>Analytical & Critical Thinking</h4>
-                    <p>Identifies and defines problems, extracting key information from data and develops workable solutions in order to isolate, test, and verify the problem and solution.</p>
+                <div class="col-md-2 mx-auto w-25 h-25">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Identifies and defines problems, extracting key information from data and develops workable solutions in order to isolate, test, and verify the problem and solution." class="skill-button">
+                        <img src="~/images/algorithm.png" alt="Data structure" class="img-fluid" />
+                        <h4 class="text-center skill-header">Analytical & Critical Thinking</h4>
+                    </button>
                 </div>
-                <div class="col-2 mx-auto">
-                    <h4>SQL and Database</h4>
-                    <p>Great understanding in data flow and entity relationship. Have worked with multiple databases and tables on creating an seamless application.</p>
+                <div class="col-md-2 mx-auto w-25 h-25">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Great understanding in data flow and entity relationship. Have worked with multiple databases and tables on creating an seamless application." class="skill-button">
+                        <img src="~/images/relation.png" alt="Database relation" class="img-fluid" />
+                        <h4 class="text-center skill-header">SQL and Database</h4>
+                    </button>
+
                 </div>
             </div>
         </div>
-        <div class="row col-lg-12 mx-auto mb-3" id="about-us">
+        <h1 class="text-center font-weight-bold" id="about-us">ABOUT ME</h1>
+        <div class="row col-lg-12 mx-auto mb-3">
             <div class="col-lg-6 text-center p-sm-5 mb-5">
                 <img src="~/images/profile.jfif" alt="Profile picture" class="w-sm-50" id="profile-pic" />
             </div>
