@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Muli&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Muli&family=Lato&display=swap');
 
 #curtain-box {
     background-image: url("../images/curtain.jpeg");
@@ -19,6 +19,10 @@ header > nav {
     background-color: transparent !important;
 }
 
+h1 {
+    font-family: 'Lato', sans-serif !important;
+}
+
 #text-box {
     text-align: center;
     font-family: 'Lobster', cursive !important;
@@ -33,12 +37,20 @@ header > nav {
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1.4s;
-    width: 40%;
+    width: 100%;
 }
 
-h1 {
-    font-family: 'Lobster', cursive !important;
-}
+    #text-box > h1 {
+        font-family: 'Lobster', cursive !important;
+        font-size: 3rem;
+        text-shadow: 2px 4px 4px #000a18;
+    }
+
+    #text-box > p {
+        font-size: 1.3rem;
+        text-shadow: 2px 4px 4px #000a18;
+    }
+
 
 h4 {
     font-family: 'Muli', sans-serif;
@@ -101,8 +113,8 @@ h4 {
 
 
 .skill-image {
-    width: 100px;
-    height:100px;
+    width: 150px;
+    height:150px;
 }
 
     .skill-image:hover {
@@ -111,6 +123,19 @@ h4 {
         animation-duration: 0.2s;
         animation-fill-mode: forwards;
     }
+
+.skill-container {
+    width: 97%;
+    margin: auto;
+}
+
+.skill-box{
+    margin: auto;
+}
+
+button > h4{
+    font-size: 1.8rem;
+}
 
 .modal {
     bottom: 50%;
@@ -174,7 +199,7 @@ h4 {
 }
 
 .card-img-top {
-    height: 100%;
+    height: 230px;
     box-shadow: 5px 5px 3px rgba(0,0,0,0.37);
 }
 
@@ -183,6 +208,7 @@ h4 {
     font-size: 19px;
     padding: 45px 10px;
     font-family: 'Muli', sans-serif;
+    word-spacing: 4px;
 }
 
 #profile-pic {
@@ -192,12 +218,35 @@ h4 {
 
 form {
     font-family: 'Muli', sans-serif;
+    font-size: 1.3rem;
 }
 
 @media(max-width: 1000px) {
     #curtain-box {
         background-attachment:scroll;
         
+    }
+    .card-img-top {
+        height: 100%;
+    }
+
+    #text-box > h1 {
+        font-size: 7rem;
+    }
+    #text-box > p {
+        font-size: 2.5rem;
+    }
+    main > h1{
+        font-size: 3.5rem !important;
+    }
+
+    .title {
+        font-size: 3.5rem !important;
+    }
+
+    #profile-info {
+        padding: 5px 60px;
+        font-size: 2rem;
     }
 }
 
