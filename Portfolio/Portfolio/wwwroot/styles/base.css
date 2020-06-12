@@ -1,6 +1,8 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&display=swap');
+
+body {
     margin: auto;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cabin', sans-serif;
     height: 100vh;
 }
 

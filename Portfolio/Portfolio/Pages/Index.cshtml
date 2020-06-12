@@ -19,7 +19,7 @@
 
 <body>
     <header id="curtain-box">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" id="navvy">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navvy" style="background-color:#000a18;">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" id="nav-bard">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,37 +47,39 @@
             </div>
     </header>
     <main>
-        <h1 class="text-center font-weight-bold mt-5">SKILLS</h1>
-        <div class="container" id="skills">
+        <div id="skills"></div>
+        <h1 class="text-center font-weight-bold mt-3">SKILLS</h1>
+        <div class="container">
             <div class="row my-5">
                 <div class="col-md-2 mx-auto w-25 h-25">
                     <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Passionate about developing and delivering high quality code that is easy to read and maintain. Refactors code to improve the quality. Habitually applies agile development principles, displaying a solid understanding of agile processes, reports, and metrics, and how to use them." class="skill-button">
-                        <img src="~/images/agile.png" alt="agile" class="img-fluid" />
+                        <img src="~/images/agile.png" alt="agile" class="skill-image" />
                         <h4 class="text-center skill-header">Agile</h4>
                     </button>
                 </div>
                 <div class="col-md-2 mx-auto w-25 h-25">
                     <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Relies on test driven process during the development cycle to deliver bug free application." class="skill-button">
-                        <img src="~/images/qa.png" alt="Test driven" class="img-fluid" />
+                        <img src="~/images/qa.png" alt="Test driven" class="skill-image" />
                         <h4 class="text-center skill-header">Test Driven Development</h4>
                     </button>
                 </div>
                 <div class="col-md-2 mx-auto w-25 h-25">
                     <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Identifies and defines problems, extracting key information from data and develops workable solutions in order to isolate, test, and verify the problem and solution." class="skill-button">
-                        <img src="~/images/algorithm.png" alt="Data structure" class="img-fluid" />
+                        <img src="~/images/algorithm.png" alt="Data structure" class="skill-image" />
                         <h4 class="text-center skill-header">Analytical & Critical Thinking</h4>
                     </button>
                 </div>
                 <div class="col-md-2 mx-auto w-25 h-25">
                     <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Great understanding in data flow and entity relationship. Have worked with multiple databases and tables on creating an seamless application." class="skill-button">
-                        <img src="~/images/relation.png" alt="Database relation" class="img-fluid" />
+                        <img src="~/images/relation.png" alt="Database relation" class="skill-image" />
                         <h4 class="text-center skill-header">SQL and Database</h4>
                     </button>
 
                 </div>
             </div>
         </div>
-        <h1 class="text-center font-weight-bold" id="about-us">ABOUT ME</h1>
+        <div id="about-us"></div>
+        <h1 class="text-center font-weight-bold">ABOUT ME</h1>
         <div class="row col-lg-12 mx-auto mb-3">
             <div class="col-lg-6 text-center p-sm-5 mb-5">
                 <img src="~/images/profile.jfif" alt="Profile picture" class="w-sm-50" id="profile-pic" />
@@ -90,7 +92,8 @@
                 </p>
             </div>
         </div>
-        <div id="projects" class="mt-3">
+        <div id="projects"></div>
+        <div class="mt-1">
             <div>
                 <h1 class="text-center font-weight-bold">PROJECTS</h1>
             </div>
@@ -114,7 +117,7 @@
                             <div class="inner-container">
                                 <h5 class="card-title w-100">Quik Fix</h5>
                                 <p>E-commerce website that is created using ASP.NET framework. User are able to register and login securely to the website and purchase service of their choice securely.</p>
-                                <p class="card-text">Tools Used: ASP.NET core, C#, MVC framework, BootStrap, jQuery, Identity</p>
+                                <p class="card-text">Tools Used: ASP.NET core, C#, Azure, Azure Dev-Ops, Bootstrap, jQuery</p>
                             </div>
                         </div>
                     </a>
@@ -128,7 +131,7 @@
                                 <p>
                                     A web application that is designed using ASP.NET framework calls custom API server that utilize CRUD operation. The purpose of this website is to alleviate user who is experiencing boredom during the quarantine times.
                                 </p>
-                                <p class="card-text">Tools Used: ASP.NET core, C#, RESTful API, Entity Framework, MVC framework</p>
+                                <p class="card-text">Tools Used: ASP.NET core, C#, Azure, RESTful API, Entity Framework, MVC framework</p>
                             </div>
                         </div>
                     </a>
@@ -173,7 +176,8 @@
             </div>
         </div>
 
-        <div class="col-10 position-relative mx-auto mt-5" id="contact">
+        <div id="contact"></div>
+        <div class="col-10 position-relative mx-auto mt-2">
             <div>
                 <h1 class="text-center font-weight-bold">CONTACT ME</h1>
             </div>
@@ -200,7 +204,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <button type="submit" class="btn btn-primary mx-auto" id="submit-button">Submit</button>
+                    <button type="submit" class="btn btn-dark mx-auto" id="submit-button">Submit</button>
                 </div>
             </form>
             <div class="modal position-absolute align-content-center" tabindex="-1" role="dialog">

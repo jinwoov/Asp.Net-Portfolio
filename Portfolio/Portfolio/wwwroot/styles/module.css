@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Muli&display=swap');
 
 #curtain-box {
     background-image: url("../images/curtain.jpeg");
@@ -8,6 +8,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+}
+
+header > nav {
+    font-family: 'Lobster', cursive !important;
 }
 
 #navvy {
@@ -16,8 +21,8 @@
 
 #text-box {
     text-align: center;
-    font-family: 'Yeon Sung', cursive;
-    color: white !important;
+    font-family: 'Lobster', cursive !important;
+    color: #feeb00 !important;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,8 +33,20 @@
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1.4s;
+    width: 40%;
 }
 
+h1 {
+    font-family: 'Lobster', cursive !important;
+}
+
+h4 {
+    font-family: 'Muli', sans-serif;
+}
+
+#about-us, #skills, #projects, #contact {
+    height: 75px;
+}
 
 @keyframes fadeInOpacity {
     0% {
@@ -68,7 +85,7 @@
     }
 
     100% {
-        transform: scale(1.05);
+        transform: scale(1.08);
     }
 }
 
@@ -82,10 +99,18 @@
     }
 }
 
-#skills {
-    margin-top: 65px;
+
+.skill-image {
+    width: 100px;
+    height:100px;
 }
 
+    .skill-image:hover {
+        animation-name: enlargeHover;
+        animation-timing-function: ease-in;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+    }
 
 .modal {
     bottom: 50%;
@@ -103,6 +128,7 @@
 }
 
 .projectBox {
+    font-family: 'Muli', sans-serif;
     animation-name: enlargeHoverOut;
     animation-timing-function: ease-in;
     animation-duration: 0.2s;
@@ -156,6 +182,7 @@
     line-height: 1.6;
     font-size: 19px;
     padding: 45px 10px;
+    font-family: 'Muli', sans-serif;
 }
 
 #profile-pic {
@@ -163,3 +190,17 @@
     border-radius: 5%;
 }
 
+form {
+    font-family: 'Muli', sans-serif;
+}
+
+@media(max-width: 1000px) {
+    #curtain-box {
+        background-attachment:scroll;
+        
+    }
+}
+
+.nav-link {
+    color: #feeb00 !important;
+}

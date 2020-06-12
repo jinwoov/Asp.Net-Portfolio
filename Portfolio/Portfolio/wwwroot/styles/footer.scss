@@ -1,4 +1,6 @@
 ﻿$breakpoint-tablet: 1000px;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Muli&display=swap');
+
 
 body {
     height: 100%;
@@ -23,17 +25,18 @@ body {
     }
 
     footer {
-        background-color: #343a40;
+        background-color: #000a18;
 
         div {
 
             a {
+                font-family: 'Muli', sans-serif;
                 font-size: 1.5rem;
-                color: white;
+                color: white !important;
             }
 
             a:hover {
-                color: white;
+                color: rgba(255, 255, 255, 0.65);
                 text-decoration: none;
                 opacity: 0.6;
             }
