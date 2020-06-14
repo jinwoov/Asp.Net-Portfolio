@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll">
     <header id="curtain-box">
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navvy" style="background-color:#000a18;">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" id="nav-bard">
@@ -69,7 +69,7 @@
                     </button>
                 </div>
                 <div class="col-md-2 skill-box">
-                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Great understanding in data flow and entity relationship. Have worked with multiple databases and tables on creating an seamless application." class="skill-button">
+                    <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Great understanding in data flow and entity relationship. Have worked with multiple databases and tables on creating a seamless application." class="skill-button">
                         <img src="~/images/relation.png" alt="Database relation" class="skill-image" />
                         <h4 class="text-center skill-header">SQL and Database</h4>
                     </button>
@@ -84,9 +84,9 @@
             </div>
             <div class="col-lg-5">
                 <p id="profile-info">
-                    My name is Jin Kim and I am a software developer. Growing up, I would sit in front of the computer for hours and hours, wondering who is behind the screen making the game, I would often talk to the screen wondering if anyone will answer back. But I started to notice myself drawn to it more when my family was going through hardship. During that time I think I coped with it little better because of technology and gaming.  Game served as an escape of reality for me and I was drawn to it more and more.
+                    My name is Jin Kim and I am a software developer. Growing up, I would sit in front of the computer for hours and hours, wondering who is behind the screen making the game, I would often talk to the screen wondering if anyone would answer back. But I started to notice myself drawn to it more when my family was going through hardship. During that time I think I coped with it little better because of technology and gaming.  Game served as an escape of reality for me and I was drawn to tech industry.
 
-                    I moved to Seattle to apply to dental school but I noticed myself being disconnected from that more and more as the time pass and I finally made a move to change my career into something that I am truly passionate about. Needless to say that my question has been answered about the man behind the screen and I want to build an application that not only is comprehensive and scalable, but helps to inspire kids like me in future.
+                    I moved to Seattle to apply to dental school but I noticed myself being disconnected from that more and more as the time passed and I finally made a move to change my career into something that I am truly passionate about. Needless to say that my question has been answered about the man behind the screen and I want to build an application that not only is comprehensive and scalable, but helps to inspire kids like me in the future.
                 </p>
             </div>
         </div>
@@ -180,29 +180,31 @@
             <div>
                 <h1 class="text-center font-weight-bold title">CONTACT ME</h1>
             </div>
-            <form method="post" class="col-sm-12 mx-auto border border-secondary rounded p-4 my-5">
+            <form method="post" class="col-10 mx-auto border border-secondary rounded p-4 my-5">
                 <div class="form-group row">
-                    <label asp-for="EmailInfo.Email" class="col-sm-12 col-form-label"></label>
-                    <div class="col-sm-12">
-                        <input asp-for="EmailInfo.Email" class="form-control" required />
-                        <span class="invalid-feedback" asp-validation-for="EmailInfo.Email"></span>
+                    <div class="col-6">
+                        <label asp-for="EmailInfo.Email" class="col-sm-12 col-form-label"></label>
+                        <div class="col-sm-12">
+                            <input asp-for="EmailInfo.Email" class="form-control" required />
+                            <span class="invalid-feedback" asp-validation-for="EmailInfo.Email"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label asp-for="EmailInfo.Name" class="col-sm-12 col-form-label"></label>
+                        <div class="col-sm-12">
+                            <input asp-for="EmailInfo.Name" class="form-control" required id="name-box" />
+                            <span class="invalid-feedback" asp-validation-for="EmailInfo.Name"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label asp-for="EmailInfo.Name" class="col-sm-12 col-form-label"></label>
-                    <div class="col-sm-12">
-                        <input asp-for="EmailInfo.Name" class="form-control" required id="name-box" />
-                        <span class="invalid-feedback" asp-validation-for="EmailInfo.Name"></span>
-                    </div>
-                </div>
-                <div class="form-group row">
+                <div class="form-group row" id="messagebox">
                     <label asp-for="EmailInfo.Message" class="col-sm-12 col-form-label"></label>
                     <div class="col-sm-12">
                         <textarea class="form-control" asp-for="EmailInfo.Message" rows="5" required></textarea>
                         <span class="invalid-feedback" asp-validation-for="EmailInfo.Message"></span>
                     </div>
                 </div>
-                <div class="form-group row">
+                <div class="form-group row mt-4">
                     <button type="submit" class="btn btn-dark mx-auto" id="submit-button">Submit</button>
                 </div>
             </form>

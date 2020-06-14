@@ -15,6 +15,18 @@ header > nav {
     font-family: 'Lobster', cursive !important;
 }
 
+nav a {
+    font-size: 1.2rem !important;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+nav a.active {
+    color: blueviolet !important;
+}
+
 #navvy {
     background-color: transparent !important;
 }
@@ -59,6 +71,7 @@ h4 {
 #about-us, #skills, #projects, #contact {
     height: 75px;
 }
+
 
 @keyframes fadeInOpacity {
     0% {
@@ -113,8 +126,8 @@ h4 {
 
 
 .skill-image {
-    width: 150px;
-    height:150px;
+    width: 130px;
+    height:130px;
 }
 
     .skill-image:hover {
@@ -133,8 +146,10 @@ h4 {
     margin: auto;
 }
 
-button > h4{
-    font-size: 1.8rem;
+button > h4 {
+    font-size: 1.2rem;
+    color: #7e4bf5;
+    font-weight: bold;
 }
 
 .modal {
@@ -169,8 +184,8 @@ button > h4{
 
 .cardbody {
     top: 0;
-    width: 95%;
-    left: 2.5%;
+    width: 99%;
+    left: 0.2%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -219,6 +234,15 @@ button > h4{
 form {
     font-family: 'Muli', sans-serif;
     font-size: 1.3rem;
+}
+
+label {
+    font-size: 15px !important;
+    color: gray;
+}
+
+#messagebox {
+    margin:auto;
 }
 
 @media(max-width: 1000px) {
