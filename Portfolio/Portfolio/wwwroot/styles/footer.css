@@ -21,7 +21,7 @@ body {
       text-decoration: none;
       opacity: 0.6; }
     body footer div #copyright {
-      color: lightgray !important;
+      color: #feeb00 !important;
       font-weight: 700; }
 
 @media (max-width: 1000px) {
