@@ -48,8 +48,8 @@
     </header>
     <main>
         <div id="skills"></div>
-        <h1 class="text-center font-weight-bold mt-3">SKILLS</h1>
-            <div class="row my-5 skill-container">
+        <h1 class="text-center font-weight-bold">SKILLS</h1>
+            <div class="row mt-5 skill-container">
                 <div class="col-md-2 skill-box">
                     <button type="button" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Passionate about developing and delivering high quality code that is easy to read and maintain. Refactors code to improve the quality. Habitually applies agile development principles, displaying a solid understanding of agile processes, reports, and metrics, and how to use them." class="skill-button">
                         <img src="~/images/agile.png" alt="agile" class="skill-image" />
@@ -78,15 +78,14 @@
             </div>
         <div id="about-us"></div>
         <h1 class="text-center font-weight-bold">ABOUT ME</h1>
-        <div class="row col-lg-12 mx-auto mb-3">
-            <div class="col-lg-6 text-center p-sm-5 mb-5">
+        <div class="row col-lg-12 mx-auto">
+            <div class="col-lg-6 text-center p-sm-5 mb-2">
                 <img src="~/images/profile.jfif" alt="Profile picture" class="w-sm-50" id="profile-pic" />
             </div>
             <div class="col-lg-5">
-                <p id="profile-info">
-                    My name is Jin Kim and I am a software developer. Growing up, I would sit in front of the computer for hours and hours, wondering who is behind the screen making the game, I would often talk to the screen wondering if anyone would answer back. But I started to notice myself drawn to it more when my family was going through hardship. During that time I think I coped with it little better because of technology and gaming.  Game served as an escape of reality for me and I was drawn to tech industry.
-
-                    I moved to Seattle to apply to dental school but I noticed myself being disconnected from that more and more as the time passed and I finally made a move to change my career into something that I am truly passionate about. Needless to say that my question has been answered about the man behind the screen and I want to build an application that not only is comprehensive and scalable, but helps to inspire kids like me in the future.
+                <p id="profile-info"> My name is Jin Kim and I am a software developer. Growing up, I would sit in front of the computer for hours and hours, wondering who is behind the screen making the game, I would often talk to the screen wondering if anyone would answer back. But I started to notice myself drawn to it more when my family was going through hardship. During that time I think I coped with it little better because of technology and gaming.  Gaming served as an escape of reality for me and I was drawn to tech industry.
+                          
+                    I moved to Seattle to apply to dental school but I noticed myself becoming disconnected from dentistry as time passed. I finally made a move to change my career into something that I am truly passionate about. Needless to say that my question has been answered about the man behind the screen. Now I want to build an comprehensive and interactive application that helps to inspire kids like me in the future.
                 </p>
             </div>
         </div>
@@ -180,7 +179,7 @@
             <div>
                 <h1 class="text-center font-weight-bold title">CONTACT ME</h1>
             </div>
-            <form method="post" class="col-10 mx-auto border border-secondary rounded p-4 my-5">
+            <form method="post" class="col-lg-10 mx-auto border border-secondary rounded p-4 my-5">
                 <div class="form-group row">
                     <div class="col-6">
                         <label asp-for="EmailInfo.Email" class="col-sm-12 col-form-label"></label>
@@ -239,6 +238,11 @@
                 <div class="col-6 text-left p-3">
                     <a href="https://www.github.com/jinwoov" target="_blank">GitHub</a>
                 </div>
+            </div>
+            <div class="row">
+                <p class="mx-auto" id="copyright">
+                    2020 &copy; Jin Woo Kim
+                </p>
             </div>
         </div>
     </footer>

@@ -12,13 +12,17 @@ body {
   body footer {
     background-color: #000a18; }
     body footer div a {
-      font-family: 'Muli', sans-serif;
-      font-size: 1.5rem;
-      color: white !important; }
+      font-family: 'lobster', cursive;
+      font-size: 23px;
+      color: white !important;
+      padding: 0.5rem !important; }
     body footer div a:hover {
       color: rgba(255, 255, 255, 0.65);
       text-decoration: none;
       opacity: 0.6; }
+    body footer div #copyright {
+      color: lightgray !important;
+      font-weight: 700; }
 
 @media (max-width: 1000px) {
   header #curtain-box {

@@ -68,8 +68,11 @@ h4 {
     font-family: 'Muli', sans-serif;
 }
 
-#about-us, #skills, #projects, #contact {
-    height: 75px;
+#about-us, #skills, #contact {
+    height: 135px;
+}
+#projects {
+    height: 155px;
 }
 
 
@@ -224,6 +227,7 @@ button > h4 {
     padding: 45px 10px;
     font-family: 'Muli', sans-serif;
     word-spacing: 4px;
+    white-space: pre-line;
 }
 
 #profile-pic {
