@@ -2,5 +2,9 @@
   {
     "outputFile": "wwwroot/styles/footer.css",
     "inputFile": "wwwroot/styles/footer.scss"
+  },
+  {
+    "outputFile": "wwwroot/styles/blog.css",
+    "inputFile": "wwwroot/styles/blog.scss"
   }
 ]

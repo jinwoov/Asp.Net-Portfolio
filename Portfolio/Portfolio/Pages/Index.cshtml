@@ -26,6 +26,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="navbar-item">
+                        <a asp-page="/Blog/index" class="nav-link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
                         <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="navbar-item">
@@ -199,7 +202,7 @@
                 <div class="form-group row" id="messagebox">
                     <label asp-for="EmailInfo.Message" class="col-sm-12 col-form-label"></label>
                     <div class="col-sm-12">
-                        <textarea class="form-control" asp-for="EmailInfo.Message" rows="5" required></textarea>
+                        <textarea class="form-control" asp-for="EmailInfo.Message" rows="10" required></textarea>
                         <span class="invalid-feedback" asp-validation-for="EmailInfo.Message"></span>
                     </div>
                 </div>
@@ -232,11 +235,14 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-6 text-right p-3">
+                <div class="col-4 text-center p-3">
                     <a href="https://www.linkedin.com/in/jinkim808/" target="_blank">LinkedIn</a>
                 </div>
-                <div class="col-6 text-left p-3">
+                <div class="col-4 text-center p-3">
                     <a href="https://www.github.com/jinwoov" target="_blank">GitHub</a>
+                </div>
+                <div class="col-4 text-center p-3">
+                    <a href="https://www.hackerrank.com/jinfluenza" target="_blank">Hackerrank</a>
                 </div>
             </div>
             <div class="row">

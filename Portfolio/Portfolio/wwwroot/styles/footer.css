@@ -10,10 +10,11 @@ body {
     width: 50px !important;
     height: 50px !important; }
   body footer {
-    background-color: #000a18; }
+    background-color: #000a18;
+    height: 140px; }
     body footer div a {
       font-family: 'lobster', cursive;
-      font-size: 23px;
+      font-size: 30px;
       color: white !important;
       padding: 0.5rem !important; }
     body footer div a:hover {
@@ -22,7 +23,8 @@ body {
       opacity: 0.6; }
     body footer div #copyright {
       color: #feeb00 !important;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 0 !important; }
 
 @media (max-width: 1000px) {
   header #curtain-box {
@@ -30,4 +32,6 @@ body {
     background-attachment: scroll;
     width: 100%; }
   header .nav-link {
-    font-size: 30px !important; } }
+    font-size: 60px !important; }
+  footer a {
+    font-size: 50px !important; } }
