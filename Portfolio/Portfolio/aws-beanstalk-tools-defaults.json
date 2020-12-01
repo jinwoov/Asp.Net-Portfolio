@@ -9,5 +9,5 @@
     "iis-website"      : "Default Web Site",
     "app-path"         : "/",
     "enable-xray"      : false,
-    "solution-stack"   : "64bit Windows Server 2019 v2.5.10 running IIS 10.0"
+    "solution-stack"   : "64bit Windows Server 2019 v2.6.0 running IIS 10.0"
 }
