@@ -93,7 +93,7 @@ h4 {
     }
 
     100% {
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: rgba(255, 255, 255, 0.90);
         opacity: 1;
     }
 }
@@ -276,8 +276,24 @@ label {
         padding: 5px 60px;
         font-size: 2rem;
     }
+    #link-content {
+        padding-left: 10% !important;
+        font-size: 2rem;
+    }
 }
 
 .nav-link {
     color: #feeb00 !important;
+}
+
+.link-fonts {
+    color: black !important;
+}
+.link-fonts:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+#link-content {
+    padding-left: 3%;
 }
