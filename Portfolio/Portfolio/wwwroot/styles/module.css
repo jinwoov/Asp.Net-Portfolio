@@ -280,6 +280,10 @@ label {
         padding-left: 10% !important;
         font-size: 2rem;
     }
+    .osc-pic {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 .nav-link {

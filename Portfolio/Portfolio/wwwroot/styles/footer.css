@@ -11,7 +11,7 @@ body {
     height: 50px !important; }
   body footer {
     background-color: #000a18;
-    height: 140px; }
+    height: 80px; }
     body footer div a {
       font-family: 'lobster', cursive;
       font-size: 30px;
@@ -22,6 +22,7 @@ body {
       text-decoration: none;
       opacity: 0.6; }
     body footer div #copyright {
+      margin-top: 2rem;
       color: #feeb00 !important;
       font-weight: 700;
       margin-bottom: 0 !important; }
